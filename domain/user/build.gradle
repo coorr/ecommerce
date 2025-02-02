@@ -2,6 +2,4 @@ bootJar.enabled = true
 jar.enabled = false
 
 dependencies {
-    implementation project(":application:api")
-    implementation project(":storage:db-core")
 }

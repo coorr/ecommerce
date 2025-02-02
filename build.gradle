@@ -7,13 +7,7 @@ plugins {
 allprojects {
 	group = 'kr'
 	version = '0.0.1-SNAPSHOT'
-//	sourceCompatibility = '17'
-
-	java {
-		toolchain {
-			languageVersion = JavaLanguageVersion.of(17)
-		}
-	}
+	sourceCompatibility = '17'
 
 	repositories {
 		mavenCentral()
@@ -41,13 +35,8 @@ subprojects {
 		testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	}
 
-	tasks.named('bootJar') {
-		enabled = false
-	}
-
-	tasks.named('jar') {
-		enabled = true
-	}
+	bootJar.enabled = false
+	jar.enabled = true
 
 	tasks.named('test') {
 		useJUnitPlatform()
