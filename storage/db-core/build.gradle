@@ -1,0 +1,6 @@
+bootJar.enabled = true
+jar.enabled = false
+
+dependencies {
+    runtimeOnly 'com.mysql:mysql-connector-j'
+}

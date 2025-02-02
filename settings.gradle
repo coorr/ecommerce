@@ -1,0 +1,6 @@
+rootProject.name = 'ecommerce'
+
+include 'application:api'
+include 'domain:user'
+include 'domain:meta'
+include 'storage:db-core'
